@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação</title>
+    <style>
+        h1{
+        
+            font-family: "Dancing Script", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f2ce;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            background-color:    #493d3f;
+            color: #fff;
+            padding: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            background-color:   #bdb495;
+            padding: 10px;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #020202;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Oculta as seções inicialmente */
+        section {
+            display: none;
+            padding: 20px;
+            margin: 10px auto;
+            max-width: 800px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        /* Exibe a seção ativa */
+        section.active {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        header {
+            text-align: center;
+            background-color:  #493d3f;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .minha-foto {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Torna a foto redonda */
+            border: 3px solid #fff;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="minha-foto.jpg.jpg" alt="Foto de [Gabrielle]" class="minha-foto">
+        <h1>Gabrielle De Castro Alves</h1>
+        <p>Desenvolvedora Front-End | Estudante de Análise e Desenvolvimento de Sistemas</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#sobre" data-target="sobre">Sobre Mim</a></li>
+            <li><a href="#habilidades" data-target="habilidades">Habilidades</a></li>
+            <li><a href="#contato" data-target="contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Sou uma estudante de Análise e Desenvolvimento de Sistemas, apaixonada por tecnologia e desenvolvimento Front-End. Atualmente, estou em busca da minha primeira oportunidade profissional na área de TI, onde possa aplicar meus conhecimentos em HTML, CSS e JavaScript, e continuar aprendendo e crescendo.</p>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Interesse em frameworks como React e Angular.</li>
+                <p><strong>Soft Skills:</strong>
+                    Proatividade, empatia, e facilidade de comunicação.
+                    Capacidade de aprendizado rápido e trabalho em equipe.</p>
+            </ul>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Email: <a href="mailto:seuemail@example.com">gabrielledecastro2320@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/seu-perfil" target="_blank">https://www.linkedin.com/in/gabrielle-c-alves-0814742a3/</a></p>
+            <p>GitHub: <a href="https://github.com/seuperfil" target="_blank">https://github.com/gabriellecastr0</a></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Gabrielle C Alves.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
